@@ -73,6 +73,7 @@ if [[ "$GPU_ARCH_TYPE" == "xpu" ]]; then
         "/opt/intel/oneapi/compiler/latest/lib/libpi_level_zero.so"
         "/opt/intel/oneapi/pti/latest/lib/libpti_view.so.0.9"
         "/opt/intel/oneapi/pti/latest/lib/libpti.so.0.9"
+        "/lib/x86_64-linux-gnu/libze_loader.so.1"
     )
     DEPS_SONAME+=(
         "libsycl-preview.so.7"
@@ -85,6 +86,7 @@ if [[ "$GPU_ARCH_TYPE" == "xpu" ]]; then
         "libpi_level_zero.so"
         "libpti_view.so.0.9"
         "libpti.so.0.9"
+        "libze_loader.so.1"
     )
 fi
 
